@@ -1,0 +1,576 @@
+
+
+:root{
+    --main-color:#e8a93f;
+    --black:#13131a;
+	--lightbrown:#a99a7e;
+    --bg:#0b1130;
+	--orange:#99460e;
+	--bg1:var(--main-color)
+
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+html{
+    font-size: 60.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body
+{
+	margin: 30px;
+	padding: 0;
+	
+}
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+
+.boxs{ 
+         width:1000px;
+		 height:500px;
+		 background:#000;
+		 top:60%;
+		 right:50%;
+		 left:50%;
+		 position:absolute;
+		 transform: translate(-50%,-50%);
+	
+		 padding:30px 20px; 
+		 background:rgba(0,0,0,0.8);
+		 align-items: center;
+		 align-content: center;
+		 
+		 
+}
+
+
+.brand h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align: center;
+	font-size:35px;
+	color: #900;
+	font-family:Castellar;
+}
+
+h2{
+	margin:0;
+	padding:0 0 20px;
+	text-align: center;
+	font-size:14px;
+	font-family: algerian;
+	
+}
+#p1{
+	text-align: center;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(pic2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#e8a93f;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#f1ebe0;
+}
+.about{
+	background-color: var(--lightbrown);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--bg);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:var(--orange);
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:var(--lightbrown);
+    padding:1rem 0;
+    line-height: 1.8;
+}
+.about button{
+    font-size: 1.6rem;
+    
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+section.sec1
+{
+	width:100%;
+	height: 190vh;
+	box-sizing:border-box;
+	background:url(pic2.jpg);
+	object-fit:absolute;
+}
+nav
+{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:70px;
+	background: var(--black);
+	padding: 0 100px;
+	box-sizing:border-box;
+	z-index: 9999;
+}
+nav .brand
+{
+	float:left;
+	height: 100%;
+	line-height: 70px;
+	font-size: 70;
+
+}
+nav .brand h1
+{
+	margin: 0;
+	padding: 0;
+	color:var(--main-color) ;
+	font-family:Arial, Helvetica, sans-serif;
+	
+	
+}
+nav ul
+{
+	float:right;
+	display:flex;
+	margin: 0;
+	padding:0;
+}
+nav ul li	
+{
+	list-style: none;
+}
+nav ul li a
+{
+	position: relative;
+	display: block;
+	height:70px;
+	line-height: 70px;
+	padding: 0 20px;
+	box-sizing:border-box;
+	color: var(--main-color);
+	text-decoration:none;
+	text-transform:uppercase;
+	transform:.5s;
+}
+nav ul li a:hover
+{
+	color:var(--main-color);
+}
+
+nav ul li a:before
+{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background:var(--lightbrown);
+	transform-orgin:right;
+	transform:scaleX(0);
+	transiton: transform .5s;
+	
+}
+nav ul li a:hover:before
+{
+	transform-origin:left;
+	transform:scaleX(1);
+
+}
+
+.menu{
+min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(pic2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+	background:var(--bg);
+
+}
+
+.menu .box-container .box{
+    padding:8rem;
+    text-align: center;
+    border:var(--border);    
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+.menu .box-container .box p{
+    color: #fff;
+    font-size: 1.3rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background:var(--lightbrown);
+}
+
+.menu .box-container .box:hover > *{
+    color:var(--black);
+}
+.pesanform{
+	min-height: 100vh;
+		display: flex;
+		align-items: center;
+		background:url(pic2.jpg) ;
+		background: blur;
+		background-size: cover;
+		background-position: center;
+	}
+	.pesanform .row{
+		display: flex;
+		align-items: center;
+		background:var(--black);
+		flex-wrap: wrap;
+	}
+	
+	.pesanform .row .image{
+		flex:1 1 45rem;
+	}
+	
+	.pesanform .row .image img{
+		width: 100%;
+	}
+	.pesanform .row .content{
+		flex:1 1 45rem;
+		padding:2rem;
+	}
+	
+	.pesaform .row .content h3{
+		font-size: 3rem;
+		color:#fff;
+	}
+	
+	.pesanform .row .content p{
+		font-size: 1.6rem;
+		color:#ccc;
+		padding:1rem 0;
+		line-height: 1.8;
+	}
+	.wrapper{
+		max-width: 500px;
+		width: 100%;
+		background: #f1ebe0;
+		margin: 50px auto;
+		box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+		padding: 30px;
+	  }
+	  
+	  .wrapper .title{
+	
+		font-weight: 700;
+		margin-bottom: 25px;
+		color:var(--main-color);
+		text-transform: uppercase;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 3.5rem;
+		
+	  }
+	 
+	  
+	  .wrapper .form{
+		width: 100%;
+	  }
+	  .wrapper .form h3{
+		text-transform: uppercase;
+		font-size: 3.5rem;
+		color:#fff;
+	}
+	  .wrapper .form .inputfield{
+		margin-bottom: 15px;
+		display: flex;
+		align-items: center;
+	  }
+	  
+	  .wrapper .form .inputfield label{
+		 width: 200px;
+		 color: #757575;
+		 margin-right: 10px;
+		font-size: 14px;
+	  }
+	  
+	  .wrapper .form .inputfield .input,
+	  .wrapper .form .inputfield .textarea{
+		width: 100%;
+		outline: none;
+		border: 1px solid #d5dbd9;
+		font-size: 15px;
+		padding: 8px 10px;
+		border-radius: 3px;
+		transition: all 0.3s ease;
+	  }
+	  
+	  .wrapper .form .inputfield .textarea{
+		width: 100%;
+		height: 125px;
+		resize: none;
+	  }
+	  
+	  .wrapper .form .inputfield .custom_select{
+		position: relative;
+		width: 100%;
+		height: 37px;
+	  }
+	  
+	  .wrapper .form .inputfield .custom_select:before{
+		content: "";
+		position: absolute;
+		top: 12px;
+		right: 10px;
+		border: 8px solid;
+		border-color: #d5dbd9 transparent transparent transparent;
+		pointer-events: none;
+	  }
+	  
+	  .wrapper .form .inputfield .custom_select select{
+		-webkit-appearance: none;
+		-moz-appearance:   none;
+		appearance:        none;
+		outline: none;
+		width: 100%;
+		height: 100%;
+		border: 0px;
+		padding: 8px 10px;
+		font-size: 15px;
+		border: 1px solid #d5dbd9;
+		border-radius: 3px;
+	  }
+	  
+	  .wrapper .form .inputfield .input:focus,
+	  .wrapper .form .inputfield .textarea:focus,
+	  .wrapper .form .inputfield .custom_select select:focus{
+		border: 1px solid #fec107;
+	  }
+	  
+	  .wrapper .form .inputfield p{
+		 font-size: 14px;
+		 color: #757575;
+	  }
+	  .wrapper .form .inputfield .check{
+		width: 15px;
+		height: 15px;
+		position: relative;
+		display: block;
+		cursor: pointer;
+	  }
+	  .wrapper .form .inputfield .check input[type="checkbox"]{
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	  }
+	  .wrapper .form .inputfield .check .checkmark{
+		width: 15px;
+		height: 15px;
+		border: 1px solid #fec107;
+		display: block;
+		position: relative;
+	  }
+	  .wrapper .form .inputfield .check .checkmark:before{
+		content: "";
+		position: absolute;
+		top: 1px;
+		left: 2px;
+		width: 5px;
+		height: 2px;
+		border: 2px solid;
+		border-color: transparent transparent #fff #fff;
+		transform: rotate(-45deg);
+		display: none;
+	  }
+	  .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+		background: #fec107;
+	  }
+	  
+	  .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+		display: block;
+	  }
+	  
+	  .wrapper .form .inputfield .btn{
+		width: 100%;
+		 padding: 8px 10px;
+		font-size: 15px; 
+		border: 0px;
+		background:  #fec107;
+		color: #fff;
+		cursor: pointer;
+		border-radius: 3px;
+		outline: none;
+	  }
+	  
+	  .wrapper .form .inputfield .btn:hover{
+		background:url(--main-color);
+	  }
+	  
+	  .wrapper .form .inputfield:last-child{
+		margin-bottom: 0;
+	  }
+	  .contact{
+		margin-top: 9%;
+	  }
+	  .contact .row{
+		display: flex;
+		background:var(--black);
+		flex-wrap: wrap;
+		gap:4rem;
+	}
+	.contact .row .image{
+		flex:1 1 45rem;
+		padding-top: 5%;
+	}
+	
+	.contact .row .image img{
+		width: 100%;
+
+	}
+	
+	
+	.contact .row form{
+		flex:1 1 45rem;
+		padding:5rem 2rem;
+		text-align: center;
+	}
+	
+	.contact .row form h3{
+		text-transform: uppercase;
+		font-size: 3.5rem;
+		color:#fff;
+	}
+	
+	.contact .row form .inputBox{
+		display: flex;
+		align-items: center;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		background:var(--bg);
+		border:var(--border);
+	}
+	
+	.contact .row form .inputBox span{
+		color:#fff;
+		font-size: 2rem;
+		padding-left: 2rem;
+	}
+	
+	.contact .row form .inputBox input{
+		width: 100%;
+		padding:2rem;
+		font-size: 1.7rem;
+		color:#fff;
+		text-transform: none;
+		background:none;
+	}
+	  
+	
+	  
+
+	
+

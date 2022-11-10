@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="go.css">
+<body> <nav>
+
+            <div class="brand">
+             <h1>Aquzu</h1>
+             </div>
+            
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pesan.html">Pesan</a></li>
+                <li><a href="feedback.html">Feedback</a></li> 
+                <li><a href="menunavbar.html">Logout</a></li>  </ul>
+                </nav>
+               <section class="contact" id="contact">
+
+    <h1 class="heading"> <span>Kontak</span> Kami </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="bottle2.jpg" alt="">
+        </div>
+
+        <form name="feedback" method="post" onsubmit="return validateForm()">
+            <h3>Kirim Feedback</h3>
+            <div class="inputBox">
+                <input type="number" name="number" placeholder="No.hp">
+            </div>
+            <div class="inputBox">
+
+                <input type="email" name="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="textbox" name="masukan" placeholder="Masukan">
+            </div>
+            <input type="submit" value="Kirim" class="btn">
+        </form>
+
+    </div>
+</section>
+
+<script>
+        function validateForm() {
+            if (document.forms["feedback"]["number"].value == "") {
+                alert("nomer Tidak Boleh Kosong");
+                document.forms["feedback"]["number"].focus();
+                return false;
+            }
+            if (document.forms["feedback"]["email"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["feedback"]["email"].focus();
+                return false;
+            }
+            if (document.forms["feedback"]["masukan"].value == "") {
+                alert("masukan Tidak Boleh Kosong");
+                document.forms["fedback"]["masukan"].focus();
+                return false;
+            }
+           
+        }
+        
+    </script></body>
